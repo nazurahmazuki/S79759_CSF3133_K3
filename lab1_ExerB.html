@@ -1,0 +1,36 @@
+<!doctype html>
+<!--Error 1(Line1): missing<!doctype html>-->
+<html lang="en">
+  <!--Error 2(Line2): missing lang="en"-->
+  <head>
+    <title>Campus Coding Club</title>
+    <!--Error 3(Line3): missing </title-->
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Welcome to Campus Coding Club</h1>
+    <!--Error 4(Line7): <h1> is closed with </h2>-->
+    <p>
+      We meet every <strong><em>Wednesday</em></strong> at Lab 3.
+      <!--Error 5(Line8): <strong> and <em> are closed in the wrong order-->
+    </p>
+
+    <h2>Our Activities</h2>
+    <!--Error 6(Line9): <h2> is not closed correctly-->
+    <ul>
+      <li>Weekly coding sessions</li>
+      <!--Error 7(Line11): missing</li>-->
+      <li>Hackathon</li>
+      <li>Web design workshop</li>
+    </ul>
+    <!--Error 8(Line14): uses </ol> even the list starts with <ul>-->
+    <p>
+      Visit our university: <a href="https://www.umt.edu.my">UMT Website</a>
+    </p>
+    <!--Error 9(Line15): Url is missing https://-->
+    <img src="club.jpg" alt="Campus Coding Club">
+    <!--Error 10(Line16): Image is missing an alt attribute-->
+    <p>Copyright (c) 2026 Campus Coding Club & Friends</p>
+  </body>
+</html>
+<!--Error 11(Line19): missing </html>-->
