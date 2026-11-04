@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Contact Form with Inline Calculator</title>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Interactive Contact Form with Inline Calculator</h1>
+        <span>We are a team of dedicated professionals</span>
+    </div>
+
+    <div id="content">
+        <form id="contactForm">
+            Email: <input type="email" name="useremail" required><br>
+            Contact Date: <input type="date" name="tarikh" required><br>
+            Your Sastisfaction: <input type="range" name="satisfaction" min="1" max="10"><br>
+            Favourite Color: <input type="color" name="favcolor"><br>
+            <input type="submit" value="Submit">
+            </form>
+    </div><br>
+
+    <div id="calculator">
+        <h2>Inline Calculator</h2>
+        <form oninput="z.value=parseInt(x.value)+parseInt(y.value)">
+            <input type="number" id="x" name="x" placeholder="Enter first number">
+                +
+            <input type="number" id="y" name="y" placeholder="Enter second number">
+                =
+            <output type="text" id="z" name="z" readonly>
+        </form>
+    </div><br>
+
+
+    <div id="footer">
+        <p>Contact Me: nazurahmazuki@gmail.com</p>
+    </div>
+
+</body>
+</html>
