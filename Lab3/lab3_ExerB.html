@@ -1,0 +1,63 @@
+<!doctype html>
+<!--Error 1(Line 1): Missing "html" in DOCTYPE-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ticket Booking</title>
+  </head>
+  <body>
+    <div id="header">
+      <!--Error 2(Line 9): Incorrect span closing position-->
+      <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+    </div>
+    <div id="content">
+      <!--Error 3(Line 11):Span changed to div because contains block elements-->
+      <h2>Book Your Ticket</h2>
+      <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+      <!--Error 4(Line 13): < changed to &lt; and &amp; entity corrected-->
+      <form
+        action="booking.php"
+        oninput="total.value = Number(adult.value) + Number(child.value)"
+      >
+        <!--Error 5(Line 14): String addition changed to Number() calculations-->
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+          autofocus
+        /><br />
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" /><br />
+        <!--Error 6(Line 18): emial corrected to email-->
+        <label for="date">Show date:</label>
+        <input type="date" id="date" name="date" /><br />
+        <label for="movie">Movie:</label>
+        <input type="text" id="movie" list="movies" /><br />
+        <!--Error 7(Line 22): Incorrect datalist reference corrected -->
+        <datalist id="movies">
+          <!--Error 8(Line 14): Datalist ID changed to movies-->
+          <option value="Space Rangers"></option>
+          <option value="Kampung Comedy"></option>
+        </datalist>
+        <label for="adult">Adult tickets:</label>
+        <input type="number" id="adult" name="adult" value="0" /><br />
+        <label for="child">Child tickets:</label>
+        <input type="number" id="child" name="child" value="0" /><br />
+        <label for="rating">Rate our service:</label>
+        <input type="range" id="rating" name="rating" min="1" max="5" /><br />
+        <!--Error 9(Line 32): Range min and max values corrected-->
+        Total tickets: <output name="total" for="adult child"></output><br />
+        <!--Error 10(Line 33): Output for attribute corrected-->
+        <input type="submit" value="Book Now" />
+      </form>
+    </div>
+    <div id="footer">
+      <p>&copy; 2026 CineKampus. All rights reserved.</p>
+      <!--Error 11(Line 38): &Copy; corrected to &copy;-->
+    </div>
+  </body>
+  <!--Error12(Line 41): Duplicate closing HTML tags removed.-->
+</html>

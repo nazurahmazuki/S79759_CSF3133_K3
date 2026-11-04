@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ticket Booking</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div id="header">
+      <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="nav">
+      <a href="#booking">Booking</a> | <a href="#nowshowing">Now Showing</a> |
+      <a href="#footer">Footer</a>
+    </div>
+
+    <!--Content Section -->
+    <div id="content">
+      <h2 id="booking">Book Your Ticket</h2>
+
+      <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+      <form
+        oninput="
+          total.value = Number(adult.value) + Number(child.value);
+
+          price.value = Number(adult.value) * 12 + Number(child.value) * 8;
+        "
+      >
+        <label>Name:</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          required
+          autofocus
+        />
+        <br /><br />
+
+        <label>Email:</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br /><br />
+
+        <label>Phone Number:</label>
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Enter phone number"
+          required
+        />
+        <br /><br />
+
+        <label>Show Date:</label>
+        <input type="date" name="date" />
+        <br /><br />
+
+        <label>Show Time:</label>
+        <input type="time" name="time" />
+        <br /><br />
+
+        <label>Movie:</label>
+        <input type="text" name="movie" list="movies" />
+
+        <datalist id="movies">
+          <option value="Space Rangers"></option>
+          <option value="Kampung Comedy"></option>
+          <option value="The Last Adventure"></option>
+        </datalist>
+        <br /><br />
+
+        <label>Adult Tickets (RM12 each):</label>
+        <input type="number" id="adult" name="adult" min="0" value="0" />
+        <br /><br />
+        <label>Child Tickets (RM8 each):</label>
+        <input type="number" id="child" name="child" min="0" value="0" />
+        <br /><br />
+        <label>Rate Our Service:</label>
+        <input type="range" name="rating" min="1" max="5" />
+        <br /><br />
+        <p>
+          Total Tickets:
+          <output name="total" for="adult child">0</output>
+        </p>
+        <p>
+          Total Price: RM
+          <output name="price" for="adult child">0</output>
+        </p>
+        <input type="submit" value="Book Now" />
+      </form>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div id="sidebar">
+      <h2 id="nowshowing">Now Showing</h2>
+
+      <ul>
+        <li>
+          <strong>Space Rangers</strong>
+          <span>(PG)</span>
+          <a
+            href="https://www.youtube.com/results?search_query=Space+Rangers+trailer"
+          >
+            Watch Trailer
+          </a>
+        </li>
+
+        <li>
+          <strong>Kampung Comedy</strong>
+          <span>(PG)</span>
+          <a
+            href="https://www.youtube.com/results?search_query=Kampung+Comedy+trailer"
+          >
+            Watch Trailer
+          </a>
+        </li>
+        <li>
+          <strong>The Last Adventure</strong>
+          <span>(13+)</span>
+          <a
+            href="https://www.youtube.com/results?search_query=The+Last+Adventure+trailer"
+          >
+            Watch Trailer
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+      <p>
+        e-Ticket&reg; &ndash; Campus Cinema &lt; RM10 every Tuesday &amp;
+        Thursday
+      </p>
+      <p>&copy; 2026 CineKampus.All rights reserved.</p>
+    </div>
+  </body>
+</html>
