@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bakery Online Order</title>
+</head>
+<body>
+    <!--Header Section-->
+    <div id="header">
+        <h1>Campus Bakery</h1>
+        <span>Fresh Baked Goods Daily</span>
+    </div>
+
+    <!--Navigation Section-->
+    <div id="navigation">
+        <a href="#home">Home</a> |
+        <a href="#order">Order</a> | 
+        <a href="#prices">Prices List</a>
+    </div>
+
+    <!--Content Section-->
+    <div id="content">
+
+        <h2 id="home">Welcome to Campus Bakery!</h2>
+
+        <p>Welcome to our <strong>online</strong> ordering system!
+           We offer a <em>variety</em> offresh baked goods made daily 
+           with the finest ingredients.
+           <span>We are a team of dedicated professionals.</span>
+           Visit our <a href="#order">order form</a> today.
+        </p>
+
+        <h2 id="order">Place Your Order</h2>
+
+
+        <form id="contactForm">
+            Customer Name: <input type="text" name="username" required><br>
+            Number Phone: <input type="tel" name="phone" required><br>
+            Email: <input type="email" name="useremail" required><br>
+            Contact Date: <input type="date" name="tarikh" required><br>
+            Pickup Time: <input type="time" name="pickuptime" required><br>
+            Flavour:<input type="text" name="flavour" list="flavours"
+            placeholder="Enter flavour" required>
+                <datalist id="flavours">
+                    <option value="Chocolate">
+                    <option value="Vanilla">
+                    <option value="Strawberry">
+                    <option value="Red Velvet">
+                </datalist><br>
+            Sweetness Level: <input type="range" name="sweetness" min="1" max="10"><br>
+            Icing Color: <input type="color" name="icingcolor"><br>
+            <input type="submit" value="Submit">
+            </form>
+    </div><br>
+
+    <!-- Sidebar Section -->
+    <div id="sidebar"> 
+
+        <h2 id="prices">Price List</h2>
+
+        <ul>
+            <li>Chocolate Cupcake - RM3.00</li>
+            <li>Vanilla Cupcake - RM3.00</li>
+            <li>Strawberry Cupcake - RM3.00</li>
+            <li>Cake Slice - RM5.00</li>
+        </ul>
+
+        <p>Orders &gt; 10 pieces get a free drink!</p>
+        <p>Freshly baked&nbsp; every day.</p>
+
+    </div>
+
+    <!-- Price Calculator -->
+    <div id="calculator">
+    <h2>Price Calculator</h2>
+    <form oninput="total.value = (parseInt(cupcakes.value || 0) * 3) + (parseInt(cakes.value || 0) * 5)">
+        <label for="cupcakes">Cupcakes (RM 3.00 each):</label>
+        <input type="number" id="cupcakes" name="cupcakes" min="0" value="0">
+        
+        <br><br>
+
+        <label for="cakes">Cake Slices (RM 5.00 each):</label>
+        <input type="number" id="cakes" name="cakes" min="0" value="0">
+        
+        <br><br>
+
+        <label for="total">Total Price (RM):</label>
+        <output id="total" name="total" for="cupcakes cakes">0</output>
+    </form>
+</div>
+
+    <!--Footer Section-->
+    <div id="footer">
+        <p>&copy; 2026 CampusBake&reg;. All rights reserved.</p>
+    </div>
+
+</body>
