@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>e-Café Campus</title>
+    <style>
+        /* Navigation bar */
+        /*Error 1 (Line7):Incorrect HTML comment syntax inside CSS.*/
+        ul {
+            list-style-type: none;
+            /*Error 2 (Line9):list-style-type: no is invalid. Change to none.*/
+            margin: 0;
+            padding: 0;
+        }
+        a:link {color: #1A5276;}
+        a:visited {color: #7D3C98;}
+        a:hover {color: #E67E22;}
+        /*Error3(Line14-15):Link states are in the wrong order.*/
+        a:active {color: #C0392B;}
+        h1 {text-decoration: overline;}
+        /*Error 4 (Line17):overlined is invalid. Change to overline.*/
+        p {color: #333333; text-align: justify;}
+        /*Error 5 (Line18):Missing colon after the color property.*/
+        .intro {
+        /*Error 6 (Line20):#intro should be .intro because HTML uses class.*/
+            font-size: 18px;
+            background-color: #FDEBD0;
+        }
+        .highlight {
+         /*Error 7 (Line 22): Missing dot before highlight class selector.*/
+            font-weight: bold;
+            color: #C0392B;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>e-Café Campus</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#menu">Menu</a></li>
+        <!--Error 8 (Line34): href="menu" should be href="#menu"-->
+        <li><a href="#video">Video</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<section id="menu">
+    <h2>Today's Menu</h2>
+    <p class="intro">Freshly brewed coffee and local delights every day.   
+    </p>
+    <article class="menu-item">
+    <!--Error 9 (Line 42): Duplicate id="item".Use a class instead.-->
+        <h3>Kopi Tarik</h3>
+        <p>Only <span class="highlight">RM 3.50</span></p>
+    </article>
+    <article id="item">
+        <h3>Nasi Lemak</h3>
+        <p>Only <span class="highlight">RM 5.00</span></p>
+    </article>
+</section>
+<section id="video">
+    <h2>Watch Our Story</h2>
+    <video width="400" height="300">
+    <!--Error 10 (Line 53): Missing controls attribute in video.-->
+        <source src="cafe.mp4" type="video/mp4">
+        <!--Error 11 (Line 54): Incorrect video type. Use video/mp4.-->
+        Your browser does not support the video tag.
+</video>
+</section>
+<footer id="contact">
+    <p>&copy; 2026 e-Cafe Campus</p>
+</footer>
+</body>
+</html>
