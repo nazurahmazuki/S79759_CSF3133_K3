@@ -1,0 +1,25 @@
+/* General Styles */
+body { background-color: #FDFEFE; }
+h2 { text-decoration: underline; }
+
+/* Navigation Bar */
+nav ul { list-style-type: none; margin: 0; padding: 0; background-color: #2C3E50; text-align: center; }
+nav li { display: inline-block; }
+nav a { display: block; color: white; padding: 15px 20px; text-transform: uppercase; text-decoration: none; }
+nav a:hover { background-color: #1ABC9C; }
+
+/* Link States */
+a:link { color: #1A5276; }
+a:visited { color: #7D3C98; }
+a:hover { color: #E67E22; }
+a:active { color: #C0392B; }
+
+/* Text Decoration & Prices */
+.old-price { text-decoration: line-through; color: #999; }
+.highlight { font-weight: bold; color: #C0392B; }
+
+/* Feedback Form */
+.feedback-form { background-color: #EAECEE; padding: 20px; border: 1px solid #BDC3C7; width: 90%; }
+
+/* Video Responsiveness */
+video { max-width: 100%; height: auto; }

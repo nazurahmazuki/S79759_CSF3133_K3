@@ -1,0 +1,106 @@
+/* --- General Page Styling --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F6F7;
+    color: #333;
+}
+
+header, section, footer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- Text Decoration (Requirement 5) --- */
+h2 {
+    text-decoration: underline; 
+    color: #1A5276;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.price {
+    color: #C0392B;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* --- Navigation Bar Styling (Requirement 2) --- */
+nav {
+    background-color: #1A5276;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #E67E22;
+}
+
+/* --- Interactive Link States (Requirement 6) --- */
+/* Must be in this exact order: link, visited, hover, active */
+a:link { color: #3498DB; }
+a:visited { color: #8E44AD; }
+a:hover { color: #E67E22; }
+a:active { color: #C0392B; }
+
+/* --- Card Layout --- */
+.card {
+    background-color: #FFFFFF;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+}
+
+/* --- Form Styling (Requirement 7) --- */
+.trip-form {
+    background-color: #FDEBD0;
+    padding: 20px;
+    border: 2px solid #E67E22;
+    width: 90%;
+    border-radius: 5px;
+}
+
+/* --- Responsive Video (Requirement 8) --- */
+video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #1A5276;
+}
+
+/* --- Footer Styling --- */
+footer {
+    text-align: center;
+    background-color: #1A5276;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #F1C40F;
+}
