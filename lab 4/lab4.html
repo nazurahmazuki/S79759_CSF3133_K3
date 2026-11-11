@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazurah webpage</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /*Style for the header section*/
+        h1{
+            text-decoration: overline;
+            color: #2C3E50;
+        }
+        .form-container {
+            background-color: #EAECEE;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+    </style>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        a:link, a:visited {
+            display: block;
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: #2C3E50;
+            width: 120px;
+            text-align: center;
+            padding: 4px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        a:hover, a:active {
+            background-color: #1ABC9C;
+        }
+          </style>
+</head>
+<body>
+    <!--Navigation Section-->
+    <header>
+        <h1>Welcome to my webpage!</h1>
+        <span>Explore about me!</span>
+    </header>
+    <!--Navigation Section-->
+    <nav>
+            <a href="#aboutme">About Me</a>
+            <a href="#song">Song</a>
+            <a href="#skill">Skill</a>
+          
+    </nav>
+
+    <!--About Me Section-->
+    <section id="aboutme">
+        <h2> My Personal Information</h2>
+        <p> "My name is Nurnazurah Binti Mohd Mazuki, and I am a 20-year-old student living in Dungun.
+             I am a curious and motivated person who loves exploring netball and playing puzzle games.
+              Outside of my daily routine, I enjoy netball and playing puzzle games, 
+              which teach me the value of patience and teamwork. 
+            In the future, I hope I can make a positive impact on the people around me."
+        </p>
+    </section>
+
+    <!--Song Section-->
+    <section id="song">
+        <h2> My Favourite Song</h2>
+        <video width="400" height="300" controls>
+            <source src="song.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!--Skill Section-->
+    <section id="skill">
+        <h2> My Skills</h2>
+        <article>
+            <h3>Coding and Software Development</h3>
+            <p>My tools include Java, Html, and CSS.</p>
+        </article>
+        <article>
+            <h3>Time Management</h3>
+            <p>I am skilled at managing my time effectively, ensuring that I can balance multiple tasks and meet deadlines.</p>
+        </article>
+    </section>
+ 
+    <!-- 5. Interactive Elements Section (Form) -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="form-container">
+            <form action="#" method="POST">
+                
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <p>Favorite Hobbies:</p>
+                <input type="checkbox" id="coding" name="hobby" value="coding">
+                <label for="coding">Coding</label><br>
+                <input type="checkbox" id="netball" name="hobby" value="netball">
+                <label for="netball">Playing Netball</label><br>
+                <input type="checkbox" id="puzzles" name="hobby" value="puzzles">
+                <label for="puzzles">Puzzle Games</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        </section>
+    <footer>
+        <p>&copy; 2026 NazurahMazuki&reg;. All rights reserved.</p>
+    </footer>
+</body>
+</html>
