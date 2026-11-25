@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Web Design Quiz</h1>
+        <p>Test your knowledge!</p>
+    </header>
+
+    <!-- Main Quiz Section -->
+    <main>
+       <section id="quiz-section">
+            
+        <!-- Timer -->
+            <div id="timer">Time left: <span id="time">10</span>s</div>
+
+            <!-- Question Area -->
+            <h2 id="question-text">Question goes here...</h2>
+            
+            <!-- Options Area -->
+            <div id="options-container">
+            </div>
+        </section>
+
+            <!-- Feedback Section -->
+             <section id="feedback-section">
+                <p id="feedback-text">Your answer is correct!</p>
+            </section>
+
+            <!-- 4. Buttons -->
+        <section id="controls">
+            <button id="submit-btn" onclick="checkAnswer()">Submit Answer</button>
+            <button id="next-btn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+        </section>
+    </main>
+
+    <!-- Footer for Score -->
+    <footer>
+        <p>Score: <span id="score">0</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
